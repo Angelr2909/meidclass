@@ -1,0 +1,504 @@
+:root{
+    --ligthcolor: #EEEEEE;
+    --darkcolor: #191919;
+    --graycolor: #393E46;
+    --bluecolor:#00909E;
+    --blackcolor: #040303;
+    --grayligth: #808080;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ############## MENU STAR ########### */
+header{
+    background-color: var(--ligthcolor);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.container-nav{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+}
+.logo{
+    flex: 1;
+    padding-left: 10px;
+}
+.container-menu{    
+    flex: 1;
+    margin-left: auto;
+}
+.menu-bar{
+    display: none;
+}
+.logo{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+.logo > div{
+    font-size: 24px;
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 10px;
+    color: #393E46;    
+}
+.menu{
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: var(--graycolor);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px;
+}
+.menu > li:nth-child(1){
+    box-shadow: inset 0 -5px 0 0 #00909E ;
+}
+.icon{
+    font-size: 40px;
+    color: var(--darkcolor);
+}
+
+/* *************MENU END **************** */
+
+/* ************* BANNER STAR **************** */
+.container-banner{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.705) 40%, rgba(255, 255, 255, 0)),url("/img/fondo.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+.fondo-banner{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-col1{
+    margin: 100px 0 50px 30px;
+}
+.banner-col1 > h1{
+    color: var(--ligthcolor);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3em;
+}
+.banner-col1 > p{
+    color: var(--ligthcolor);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.contacto{
+    display: inline-block;
+    border: 1px solid var(--ligthcolor);
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.contacto:hover{
+    background-color: #00909E;
+    border: 1px solid var(--graycolor);
+}
+/* ************* BANNER STAR **************** */
+
+/* ************* PRESENTATION STAR **************** */
+.about{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.about > i{
+    font-size: 80px;
+    color: var(--darkcolor);
+}
+.about >h2{
+    color: var(--darkcolor);
+    font-size: 5em;
+    margin: 0.5em;
+}
+.description{
+    max-width: 900px;
+    margin: auto;
+}
+.description > p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: var(--graycolor);
+    margin-bottom: 40px;
+}
+.boletines{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.boletines >a{
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    width: 180px;
+}
+.boletines > a >i{
+    margin-left: 10px;
+}
+.boletines >a:nth-child(1){
+    background-color: var(--bluecolor);
+    color: var(--ligthcolor);
+    border-radius: 10px;
+    border: 2px solid #393E46;
+    margin-left: auto;
+
+}
+.boletines >a:nth-child(2){
+    color: var(--graycolor);
+    border: 2px solid #393E46;
+    border-radius: 10px;
+    background-color: var(--ligthcolor);
+    margin-right: auto;
+}
+.boletines >a:nth-child(1):hover{
+    background-color: var(--ligthcolor);
+    color: var(--graycolor);
+    border: 2px solid #393E46;
+    border-radius: 10px;    
+    transition: all .3s;
+
+}
+.boletines >a:nth-child(2):hover{
+    background-color: var(--bluecolor);
+    color: var(--ligthcolor);
+    border-radius: 10px;
+    border: 2px solid #EEEEEE;
+    transition: all .3s;
+}
+
+/* *************** BARRA DIV **************** */
+.barra{
+    margin: auto;
+    max-width: 60%;
+    border: 1px solid #999999;
+    border-radius: 20px;
+}
+
+/* ********** VENTAJAS *********** */
+.gral{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 20px;
+}
+.col1-info{
+    padding: 20px;
+}
+.col1-info > h3{
+    font-size: 4.5em;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.col2-info{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+.globo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bluecolor);
+}
+.globo > i{
+    font-size: 25px;
+    color: var(--ligthcolor);
+}
+.paragraph{
+    font-size: 1.25em;
+    font-weight: 300;
+    color: var(--grayligth);
+    line-height: 1.5em;
+}
+.subtitle{
+    font-size: 1.5em;
+    margin: 10px 0 0 0  ;
+}
+footer{
+    background-color: var(--darkcolor);
+    padding: 20px;
+}
+.footer{
+    min-height: 200px;
+}
+.footer > div{
+    text-align: center;
+}
+.footer h3{
+    font-size: 3.5em;
+    color: var(--ligthcolor);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+.contactanos > a > i{
+    color: var(--ligthcolor);
+    margin-right: 15px;
+}
+.contactanos > a{
+    display: inline-block;
+    margin: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: var(--ligthcolor);
+    font-weight: 300;
+}
+
+/* ************** WEBS EJEMPLO ************* */
+.webs-ej{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+    margin-bottom: 40px;
+}
+.webs-ej h4{
+    font-size: 1.25em;
+    color: var(--graycolor);
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.web-grupo{
+    padding: 20px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    text-align: center;
+}
+.page-ej{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+}
+#overlay{
+    width: 350px;
+    height: 350px;
+    background-color: #00919ea2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    border-radius: 5px;
+    opacity: 0;
+}
+#overlay:hover{
+    transition: all .5s;
+    opacity: 1;
+} 
+.page-ej i{
+    font-size: 60px;
+    color: var(--ligthcolor);
+}
+.page-ej  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *******************   RESPONSIVE   ********************* */
+
+@media (max-width: 992px){
+
+    /* ************* MENU STAR ********** */
+    header{
+        position: relative;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        background-color: var(--ligthcolor);
+    }
+    .container-nav{
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .logo{
+        margin-right: auto ;
+    }
+    .icon{
+        font-size: 25px;
+    }
+    .menu-bar{
+        display: block;
+        margin-left: auto;
+        padding: 10px;
+    }
+    .container-menu{
+        grid-column: 1/3;
+        margin: auto; 
+        display: none;
+    }
+    .menu > li{
+        display: inline-block;
+        text-align: center;
+    }
+    .menu > li:nth-child(1){
+        box-shadow: none ;
+    }
+    .activado{
+    display: block;
+    }
+    /* ************* MENU END ********** */
+
+    /* ************* BANNER STAR **************** */
+    .container-banner{
+        background-image: url("/img/fondo.jpg");
+    }
+    .fondo-banner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .banner-col1{
+        margin: 150px 0 50px 30px;
+    }
+    /* ************* PRESENTACION ************** */
+    .presentacion{
+        grid-template-columns: 1fr;    
+    }
+    .prescol1 > h2{
+        font-size: 3.5em;
+        margin: 0;
+    }
+
+    /* ************* VENTAJAS ************** */
+    .col1-info{
+        padding: 0;
+    }
+    .col1-info > h3{
+        font-size: 3em;
+    }
+    .gral{
+        grid-template-columns: 1fr;
+    }
+    /* .col2-info{
+        grid-template-columns: 1fr;
+    } */
+
+}
+
+@media (max-width: 769px){
+
+
+    /* ************* MENU STAR ************/
+    header{
+        position: relative;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        background-color: var(--ligthcolor);
+    }
+    .container-nav{
+        grid-template-columns: 1fr auto;
+        padding: 10px;
+    }
+    .container-banner{
+        background-image: url("/img/fondo.jpg");
+    }
+
+    .logo{
+       margin-right: auto;
+    }
+    .icon{
+        font-size: 25px;
+    }
+    .menu-bar{
+        display: block;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .container-menu{
+        display: none;
+    }
+    .menu > li{
+        display: block;
+        text-align: center;
+    }
+    .activado{
+        display: block;
+    }
+    /* ************* MENU STAR ************/
+
+    /* ************* BANNER STAR ************/
+    .banner-col1{
+        margin: 50px 0 30px 0;
+    }
+    
+    /* ************* BANNER END ************/
+    /* ************* ABOUT ************/
+    .about{
+        margin-top: 40px;
+    }
+    .about > h2{
+        font-size: 3em;
+    }
+    .boletines{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .boletines > a{
+        margin: auto;
+    }
+
+    /* GRUPO DE PAGINAS */
+    .webs-ej{
+        grid-template-columns: 1fr;
+    }
+}
