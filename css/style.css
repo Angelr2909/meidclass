@@ -10,6 +10,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* ############## MENU STAR ########### */
 header{
@@ -363,6 +366,7 @@ footer{
     nav{
         position: fixed;
         width: 100%;
+        z-index: 1500;
         background-color: var(--ligthcolor);
     }
     .container-nav{
@@ -442,7 +446,6 @@ footer{
     }
     nav{
         position: fixed;
-        z-index: 1500;
         width: 100%;
         background-color: var(--ligthcolor);
     }
