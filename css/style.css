@@ -372,6 +372,7 @@ footer{
     .container-nav{
         grid-template-columns: auto auto;
         padding: 10px;
+        box-shadow: 5px 5px 5px #b8b8b862;
     }
     .logo{
         margin-right: auto ;
